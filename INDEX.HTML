@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Glow Nails | Nail Art Studio</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- Navbar -->
+    <header>
+        <nav class="navbar">
+            <div class="logo">Glow<span>Nails</span></div>
+
+            <ul class="nav-links" id="navLinks">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#gallery">Gallery</a></li>
+                <li><a href="#pricing">Pricing</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+
+            <button class="menu-btn" onclick="toggleMenu()">☰</button>
+        </nav>
+    </header>
+
+
+    <!-- Home -->
+    <section class="hero" id="home">
+
+        <div class="hero-text">
+            <p class="small-title">WELCOME TO GLOW NAILS</p>
+
+            <h1>
+                Beautiful Nails,
+                <span>Beautiful You.</span>
+            </h1>
+
+            <p>
+                Discover creative and stylish nail art designs
+                made specially for you.
+            </p>
+
+            <div class="hero-buttons">
+                <a href="#services" class="btn">Our Services</a>
+                <a href="#contact" class="btn btn-light">Book Appointment</a>
+            </div>
+        </div>
+
+        <div class="hero-image">
+            <img src="https://images.unsplash.com/photo-1604654894610-df63bc536371?auto=format&fit=crop&w=800&q=80"
+                 alt="Nail Art">
+        </div>
+
+    </section>
+
+
+    <!-- About -->
+    <section class="about section" id="about">
+
+        <div class="about-image">
+            <img src="https://images.unsplash.com/photo-1610992015732-2449b76344bc?auto=format&fit=crop&w=800&q=80"
+                 alt="Nail Salon">
+        </div>
+
+        <div class="about-text">
+            <p class="section-small">ABOUT US</p>
+
+            <h2>Your Nails Deserve The Best</h2>
+
+            <p>
+                At Glow Nails, we believe that nail art is more than
+                just beauty. It is a way to express your personality
+                and style.
+            </p>
+
+            <p>
+                Our professional nail artists create beautiful,
+                elegant and modern designs using high-quality products.
+            </p>
+
+            <a href="#contact" class="btn">Book Now</a>
+        </div>
+
+    </section>
+
+
+    <!-- Services -->
+    <section class="services section" id="services">
+
+        <div class="section-heading">
+            <p class="section-small">WHAT WE OFFER</p>
+            <h2>Our Nail Services</h2>
+            <p>Choose your favorite nail style.</p>
+        </div>
+
+        <div class="cards">
+
+            <div class="card">
+                <div class="icon">💅</div>
+                <h3>Classic Manicure</h3>
+                <p>
+                    Clean, elegant and beautiful manicure
+                    for everyday style.
+                </p>
+                <h4>$20</h4>
+                <button onclick="bookService('Classic Manicure')">
+                    Book Now
+                </button>
+            </div>
+
+            <div class="card">
+                <div class="icon">✨</div>
+                <h3>Gel Nails</h3>
+                <p>
+                    Long-lasting gel nails with your favorite
+                    colors and designs.
+                </p>
+                <h4>$35</h4>
+                <button onclick="bookService('Gel Nails')">
+                    Book Now
+                </button>
+            </div>
+
+            <div class="card">
+                <div class="icon">🌸</div>
+                <h3>Floral Nail Art</h3>
+                <p>
+                    Beautiful flower designs perfect for
+                    a soft and elegant look.
+                </p>
+                <h4>$40</h4>
+                <button onclick="bookService('Floral Nail Art')">
+                    Book Now
+                </button>
+            </div>
+
+            <div class="card">
+                <div class="icon">💎</div>
+                <h3>Luxury Nail Art</h3>
+                <p>
+                    Premium nail art with stones, glitter
+                    and luxury details.
+                </p>
+                <h4>$50</h4>
+                <button onclick="bookService('Luxury Nail Art')">
+                    Book Now
+                </button>
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- Gallery -->
+    <section class="gallery section" id="gallery">
+
+        <div class="section-heading">
+            <p class="section-small">OUR WORK</p>
+            <h2>Nail Art Gallery</h2>
+            <p>Some of our favorite nail designs.</p>
+        </div>
+
+        <div class="gallery-grid">
+
+            <img src="https://images.unsplash.com/photo-1604654894610-df63bc536371?auto=format&fit=crop&w=600&q=80"
+                 alt="Nail Design">
+
+            <img src="https://images.unsplash.com/photo-1632345031435-8727f6897d53?auto=format&fit=crop&w=600&q=80"
+                 alt="Nail Design">
+
+            <img src="https://images.unsplash.com/photo-1610992015732-2449b76344bc?auto=format&fit=crop&w=600&q=80"
+                 alt="Nail Design">
+
+            <img src="https://images.unsplash.com/photo-1607779097040-26e80aa78e66?auto=format&fit=crop&w=600&q=80"
+                 alt="Nail Design">
+
+        </div>
+
+    </section>
+
+
+    <!-- Pricing -->
+    <section class="pricing section" id="pricing">
+
+        <div class="section-heading">
+            <p class="section-small">OUR PRICES</p>
+            <h2>Choose Your Package</h2>
+        </div>
+
+        <div class="pricing-container">
+
+            <div class="price-card">
+                <h3>Basic</h3>
+                <div class="price">$20</div>
+
+                <ul>
+                    <li>✓ Basic Manicure</li>
+                    <li>✓ Nail Shaping</li>
+                    <li>✓ Basic Polish</li>
+                    <li>✓ Nail Care</li>
+                </ul>
+
+                <button onclick="bookService('Basic Package')">
+                    Choose Package
+                </button>
+            </div>
+
+
+            <div class="price-card popular">
+                <div class="popular-label">POPULAR</div>
+
+                <h3>Premium</h3>
+                <div class="price">$40</div>
+
+                <ul>
+                    <li>✓ Gel Nails</li>
+                    <li>✓ Nail Art</li>
+                    <li>✓ Glitter Design</li>
+                    <li>✓ Nail Care</li>
+                </ul>
+
+                <button onclick="bookService('Premium Package')">
+                    Choose Package
+                </button>
+            </div>
+
+
+            <div class="price-card">
+                <h3>Luxury</h3>
+                <div class="price">$60</div>
+
+                <ul>
+                    <li>✓ Luxury Nail Art</li>
+                    <li>✓ Premium Gel</li>
+                    <li>✓ Crystal Design</li>
+                    <li>✓ Full Nail Care</li>
+                </ul>
+
+                <button onclick="bookService('Luxury Package')">
+                    Choose Package
+                </button>
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- Contact -->
+    <section class="contact section" id="contact">
+
+        <div class="section-heading">
+            <p class="section-small">GET IN TOUCH</p>
+            <h2>Book Your Appointment</h2>
+            <p>Fill out the form and we will contact you.</p>
+        </div>
+
+        <form id="contactForm">
+
+            <div class="input-row">
+                <input type="text" id="name" placeholder="Your Name">
+                <input type="email" id="email" placeholder="Your Email">
+            </div>
+
+            <input type="text" id="service"
+                   placeholder="Select Service">
+
+            <textarea id="message"
+                      placeholder="Your Message"></textarea>
+
+            <button type="submit" class="btn">
+                Send Message
+            </button>
+
+        </form>
+
+        <div id="formMessage"></div>
+
+    </section>
+
+
+    <!-- Footer -->
+    <footer>
+
+        <div class="footer-logo">
+            Glow<span>Nails</span>
+        </div>
+
+        <p>
+            Beautiful nails. Beautiful confidence.
+        </p>
+
+        <div class="social">
+            <a href="#">Instagram</a>
+            <a href="#">Facebook</a>
+            <a href="#">TikTok</a>
+        </div>
+
+        <p class="copyright">
+            © 2026 Glow Nails. All Rights Reserved.
+        </p>
+
+    </footer>
+
+
+    <script src="script.js"></script>
+
+</body>
+</html>, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+</html>
